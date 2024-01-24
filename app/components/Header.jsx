@@ -9,8 +9,8 @@ export default function Header() {
     const [isVisible, setIsVisible] = useState(false);
     const [classElementClose, setClassElementClose] = useState(false);
     const [classElementOpen, setClassElementOpen] = useState(false);
-    const classBtnOpen = `${classElementOpen ? 'hidden' : ''}`
-    const classBtnClose = `${classElementClose ? '' : 'hidden'}`
+    const classBtnOpen = `${classElementOpen ? 'hidden' : ''}`;
+    const classBtnClose = `${classElementClose ? '' : 'hidden'}`;
 
     const toggleVisible = (e) => {
         e.preventDefault();
@@ -40,7 +40,7 @@ export default function Header() {
                 <nav className="hidden md:flex space-x-2">
                     <ul className="flex space-x-6">
                         <li><a href="#outfit" className="hover:text-violet-600">Vestimenta</a></li>
-                        <li><a href="#" className="hover:text-violet-600">Galería</a></li>
+                        <li><a href="#gallery" className="hover:text-violet-600">Galería</a></li>
                         <li><a href="#" className="hover:text-violet-600">Ubicación</a></li>
                         <li><a href="#" className="hover:text-violet-600">Contacto</a></li>
                     </ul>
@@ -50,7 +50,7 @@ export default function Header() {
             <nav className="bg-violet-300 py-5 w-screen hidden shadow-[0_h-full_0_0_rgba(0,0,0,0.5)]" id="nav" style={{ display: isVisible ? 'block' : 'none' }}>
                 <ul className="space-y-6 flex flex-col text-center">
                     <li><a href="#outfit" className="link-nav hover:text-white transition-all" onClick={clicked}>Vestimenta</a></li>
-                    <li><a href="#" className="link-nav hover:text-white transition-all">Galería</a></li>
+                    <li><a href="#gallery" className="link-nav hover:text-white transition-all" onClick={clicked}>Galería</a></li>
                     <li><a href="#" className="link-nav hover:text-white transition-all">Ubicación</a></li>
                     <li><a href="#" className="link-nav hover:text-white transition-all">Contacto</a></li>
                 </ul>
