@@ -17,26 +17,25 @@ export default function Gallery() {
     }
 
     function advanceButton() {
-        if (indexImage <= 7) {
-            setIndexImage(indexImage + 1);
-            setImage(images[indexImage]);
-            console.log(indexImage)
+        if (indexImage < 7) {
+            setIndexImage(prevIndex => prevIndex + 1);
+            setImage(images[indexImage + 1]);
         } else {
-            setIndexImage(7);
-            setImage(images[indexImage]);
+            setIndexImage(0);
+            setImage(images[0]);
         }
     }
 
     function backButton() {
-        if (indexImage >= 0) {
-            setIndexImage(indexImage - 1);
-            setImage(images[indexImage]);
-            console.log(indexImage)
+        if (indexImage > 0) {
+            setIndexImage(prevIndex => prevIndex - 1);
+            setImage(images[indexImage - 1]);
         } else {
-            setIndexImage(0);
-            setImage(images[indexImage]);
+            setIndexImage(7);
+            setImage(images[7]);
         }
     }
+
 
     return (
         <>

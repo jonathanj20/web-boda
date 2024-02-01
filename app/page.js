@@ -6,6 +6,7 @@ import Couple from './components/Couple'
 import Parents from './components/Parents'
 import Outfit from './components/Outfit'
 import Gallery from './components/Gallery'
+import Locations from './components/Locations'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Parents />
         <Outfit />
         <Gallery />
+        <Locations />
       </div>
     </main>
   )
