@@ -41,7 +41,7 @@ export default function Header() {
                     <ul className="flex space-x-6">
                         <li><a href="#outfit" className="hover:text-violet-600">Vestimenta</a></li>
                         <li><a href="#gallery" className="hover:text-violet-600">Galería</a></li>
-                        <li><a href="#" className="hover:text-violet-600">Ubicación</a></li>
+                        <li><a href="#locations" className="hover:text-violet-600">Ubicación</a></li>
                         <li><a href="#" className="hover:text-violet-600">Contacto</a></li>
                     </ul>
                 </nav>
@@ -51,7 +51,7 @@ export default function Header() {
                 <ul className="space-y-6 flex flex-col text-center">
                     <li><a href="#outfit" className="link-nav hover:text-white transition-all" onClick={clicked}>Vestimenta</a></li>
                     <li><a href="#gallery" className="link-nav hover:text-white transition-all" onClick={clicked}>Galería</a></li>
-                    <li><a href="#" className="link-nav hover:text-white transition-all">Ubicación</a></li>
+                    <li><a href="#locations" className="link-nav hover:text-white transition-all" onClick={clicked}>Ubicación</a></li>
                     <li><a href="#" className="link-nav hover:text-white transition-all">Contacto</a></li>
                 </ul>
             </nav>
