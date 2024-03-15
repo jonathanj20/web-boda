@@ -54,7 +54,7 @@ export default function Gallery() {
         <>
             <section className="bg-[url('../public/background1.jpg')] bg-cover bg-no-repeat p-5 mt-5" id="gallery">
                 <h2 className="text-center my-5">Galería de fotos</h2>
-                <div className="space-y-7 flex items-center flex-col bg-white py-10 md:space-y-0 md:grid md:place-items-center md:grid-cols-4 md:p-10 md:gap-5">
+                <div className="space-y-7 flex items-center flex-col bg-white py-10 md:space-y-0 md:grid md:place-items-center md:grid-cols-2 md:p-10 md:gap-5 lg:grid-cols-4">
                     <img src="/fondo_8.jpg" alt="" className="w-9/12 md:w-72 md:h-72 border-4 border-yellow-500 transition-all ease-in-out delay-75 hover:scale-110 cursor-pointer" onClick={() => toggleFullImage(0)} />
                     <img src="/fondo_10.png" alt="" className="w-9/12 md:w-72 md:h-72 border-4 border-yellow-500 transition-all ease-in-out delay-75 hover:scale-110 cursor-pointer" onClick={() => toggleFullImage(1)} />
                     <img src="/fondo_11.png" alt="" className="w-9/12 md:w-72 md:h-72 border-4 border-yellow-500 transition-all ease-in-out delay-75 hover:scale-110 cursor-pointer" onClick={() => toggleFullImage(2)} />
